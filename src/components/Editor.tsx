@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 interface EditorProps {
   textValue: string;
@@ -9,12 +9,10 @@ const Editor = ({ textValue, handleText }: EditorProps) => {
   return (
     <div>
       <h2 className="h2">Editor</h2>
-      <textarea
-        value={textValue}
-        onChange={handleText}
-      ></textarea>
+
+      <textarea value={textValue} onChange={handleText}></textarea>
     </div>
   );
 };
 
-export default Editor
+export default Editor;

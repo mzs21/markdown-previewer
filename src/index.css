@@ -4,15 +4,11 @@
 
 @layer base {
   body {
-    @apply bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  font-mono;
+    @apply bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 font-mono;
   }
 
   textarea {
-    @apply rounded-lg border-black border-2 resize-y cursor-text w-10/12;
-  }
-
-  code{
-      @apply bg-gray-200;
+    @apply rounded-lg border-black border-2 resize-y cursor-text w-10/12 2xl:w-10/12;
   }
 }
 
@@ -30,8 +26,10 @@
   }
 
   .reactMarkDown {
-    @apply text-left bg-white py-10 mx-7 rounded-lg border-black border-2 break-words mb-6 md:mx-16 lg:mx-20 xl:mx-32;
+    @apply text-left bg-white py-10 mx-7 rounded-lg border-black border-2 break-words mb-6 md:mx-16 lg:mx-20 xl:mx-32 2xl:w-10/12 2xl:ml-32 prose max-w-none px-4;
   }
 
-
+  .mdcs{
+    @apply font-semibold text-black underline decoration-wavy hover:italic hover:font-bold;
+  }
 }
