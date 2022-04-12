@@ -10,6 +10,10 @@
   textarea {
     @apply rounded-lg border-black border-2 resize-y cursor-text w-10/12 2xl:w-10/12;
   }
+
+  footer {
+    @apply flex justify-center space-x-2 hover:space-x-4 fixed left-0 right-0 bottom-2 hover:bottom-3;
+  }
 }
 
 @layer components {
@@ -29,7 +33,15 @@
     @apply text-left bg-white py-10 mx-7 rounded-lg border-black border-2 break-words mb-6 md:mx-16 lg:mx-20 xl:mx-32 2xl:w-10/12 2xl:ml-32 prose max-w-none px-4;
   }
 
-  .mdcs{
+  .mdcs {
     @apply font-semibold text-black underline decoration-wavy hover:italic hover:font-bold;
+  }
+
+  .github {
+    @apply w-8 h-8 hover:scale-150;
+  }
+
+  .linkedIn {
+    @apply w-8 h-8 hover:scale-150;
   }
 }
