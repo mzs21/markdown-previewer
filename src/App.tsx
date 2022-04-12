@@ -1,8 +1,7 @@
 import { useState } from "react";
 import Editor from "./components/Editor";
+import MDCS from "./components/MDCS";
 import Preview from "./components/Preview";
-import MDCS  from "./components/MDCS";
-import Footer from "./components/Footer";
 
 function App() {
   const [text, setText] = useState<string>("");
@@ -17,7 +16,6 @@ function App() {
       <MDCS />
       <Editor textValue={text} handleText={textChange} />
       <Preview markdown={text} />
-      {/* <Footer/> */}
     </div>
   );
 }
