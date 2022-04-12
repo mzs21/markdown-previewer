@@ -1,4 +1,4 @@
-# Weather App
+# Markdown Previewer
 
 ## Technologies used:
 
